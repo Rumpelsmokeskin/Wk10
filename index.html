@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 10 Assignment</title>
+   
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <!--The following chunk of code is the form and it uses Bootstrap classes to style the form-->
+    <div class="container-fluid">
+        <br>
+        <form class="form-inline">
+            <div class="container-sm">
+                <div class="row">
+                <div class="col-sm-4">
+                <label for="inputWidth">Sauna Width</label>
+                <input type="text" class="form-control" id="inputWidth" placeholder="Enter sauna width">
+                
+                </div>
+                <div class="col-sm-4">
+                <label for="inputDepth">Sauna Depth</label>
+                <input type="text" class="form-control" id="inputDepth" placeholder="Enter sauna depth">
+            
+                </div>
+                <div class="col-sm-4">
+                <label for="inputDepth">Sauna Height</label>
+                <input type="text" class="form-control" id="inputHeight" placeholder="Enter sauna depth">
+               </div> 
+
+            </div>
+            <br>
+
+                <button type="submit" style="float: inline-end;" class="btn btn-dark" id="submitButton">Submit</button>
+             </div>
+
+             <br>
+    </form>
+    <br>
+    <!--The following is the HTML table used with Bootstrap styling classes used-->
+    <table class="table table-striped" id="saunaTable">
+        <thead class="table-dark">
+            <th >Width</th>
+            <th >Depth</th>
+            <th >Height</th>
+        </thead>
+        <tbody id="saunaTableBody">
+            <tr>
+                
+            </tr>
+        </tbody>
+
+    </table>
+    </div>
+
+    <!--script links to connect jquery, bootstrap, and the scripts.js file which is my homework assignment-->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
